@@ -65,64 +65,59 @@ int main()
     **/
 
     int C = 523;
-    int _C = 554;
     int D = 587;
-    int _D = 622;
     int E = 659;
     int F = 698;
-    int _F = 740;
     int G = 784;
-    int _G = 831;
     int A = 880;
     int _A = 932;
-    int B = 988;
 
 
     string s = "Happy Birthday to you...\n";											    // The message to be typed along with the following tune.
     HANDLE h = typeMessage(s, 0);                                                           // Create a thread to type the message and get it's HANDLE.
 
     //Tune: CCDCFF
-    Beep(C, 282);                                                                           // The note to be played with the number of milliseconds to play it.
-    Beep(C, 282);
+    Beep(C, 200);
+    Beep(C, 200);
     Beep(D, 400);
-    Beep(C, 382);
-    Beep(F, 500);
-    Beep(E, 400);
+    Beep(C, 400);
+    Beep(F, 400);
+    Beep(E, 800);
 
 
     s = "Happy Birthday to you...\n";
     h = typeMessage(s, h);
 
-    //Tune: CCCGF
-    Beep(C, 282);
-    Beep(C, 282);
+    //Tune: CCDCGF
+    Beep(C, 200);
+    Beep(C, 200);
     Beep(D, 400);
-    Beep(C, 382);
-    Beep(G, 500);
-    Beep(F, 600);
+    Beep(C, 400);
+    Beep(G, 400);
+    Beep(F, 800);
 
     s = "Happy Birthday to dear <Name>\n";
     h = typeMessage(s, h);
 
-    //Tune: CCC#AFED
-    Beep(C, 282);
-    Beep(C, 282);
-    Beep(_C, 350);
-    Beep(A, 302);
+    //Tune: CCCAFED
+    Beep(C, 200);
+    Beep(C, 200);
+    Beep(C*2, 400);
+    Beep(A, 400);
     Beep(F, 400);
     Beep(E, 400);
-    Beep(D, 500);
+    Beep(D, 400);
 
     s = "Happy Birthday to you...\n";
     h = typeMessage(s, h);
 
     //Tune: A#A#AFGF
-    Beep(_A, 340);
-    Beep(_A, 220);
-    Beep(A, 220);
-    Beep(F, 228);
-    Beep(G, 286);
-    Beep(F, 270);
+    Beep(_A, 200);
+    Beep(_A, 200);
+    Beep(A, 400);
+    Beep(F, 400);
+    Beep(G, 400);
+    Beep(F, 800);
 
     s = "\nPress any key to exit...";
     h = typeMessage(s, h);
